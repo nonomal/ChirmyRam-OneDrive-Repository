@@ -1,5 +1,4 @@
-<img align="right" width="240" src="https://om.chirmyram.com/rep/Image/logo/odlogo.png
-">
+<img align="right" width="240" src="https://cdn.jsdelivr.net/gh/ChirmyRam/ChirmyRam-OneDrive-Repository/odlogo.png">
 
 # 🛖 七米蓝的仓库
 
