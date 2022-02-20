@@ -1,0 +1,46 @@
+name: Sync Readme
+on:
+  push:
+    branches:
+      - main
+jobs:
+  run-it:
+    runs-on: ubuntu-latest
+    name: Sync Readme
+    steps:
+
+      - name: Checkout codes
+        uses: actions/checkout@v2
+
+      - name: Install rclone
+        run: |
+          curl https://rclone.org/install.sh | sudo bash
+          mkdir -p ~/.config/rclone/
+          echo '${{ secrets.RCCF }}' > ~/.config/rclone/rclone.conf
+          
+      - name: Sync Readme
+        run: |
+          rclone delete pub:README.md
+          rclone delete pub:rep/README.md
+          rclone delete ani:README.md
+          rclone delete ani:ani/README.md
+          rclone delete mov:README.md
+          rclone delete mov:mov/README.md
+          rclone delete doc:README.md
+          rclone delete doc:doc/README.md
+          rclone delete tlv:README.md
+          rclone delete tlv:tlv/README.md
+          rclone delete tlv2:README.md
+          rclone delete tlv2:tlv2/README.md
+          rclone copy README.md pub:
+          rclone copy README.md pub:rep
+          rclone copy README.md ani:
+          rclone copy README.md ani:ani
+          rclone copy README.md mov:
+          rclone copy README.md mov:mov
+          rclone copy README.md doc:
+          rclone copy README.md doc:doc
+          rclone copy README.md tlv:
+          rclone copy README.md tlv:tlv
+          rclone copy README.md tlv2:
+          rclone copy README.md tlv2:tlv2
