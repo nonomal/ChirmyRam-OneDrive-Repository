@@ -11,7 +11,7 @@
 
 出于由来已久的囤积癖、白嫖怪的素养、收集剪辑素材的需求，我收集了这些资源，哗啦啦搬来一堆东西一本满足，但整理起来也是真的费劲。本着开放与共享的精神，我创建了此仓库。文件储存于国际版 OneDrive ，订阅类型为 Office365 E5 Developer，分享文件的同时也在刷API实现玄学免费续订，刷上瘾了属于是。除了域名和服务器，其他没怎么花钱，老白嫖怪了，当然所花的精力没法估量。
 
-影视资源大多为内封字幕的 mkv 格式，为了方便浏览，以中文名称拼音首字母、常用英文名称首字母为顺序建立文件夹索引，并将内容联系程度紧密的作品归类在了一起，当然可能有多种翻译，找不到时试试换个名称。网站被频繁访问会触发 OneDrive 的 API 调用限制，若报错 `activityLimitReached` 请刷新或稍后再试。若下载太慢请使用高速的全局代理或多线程下载器。在PC UA 模式下可查看文件（夹）大小。动画资源主要来自 [1ove论坛](https://www.qian.blue/archives/1ove-club.html) ，电子书、电影、电视剧资源主要来自阿里云盘各种资源分享渠道。批量搬运阿里云盘资源的教程请参阅 [自建阿里云盘webdav功能并搬运资源](https://www.chirmyram.top/archives/aliyunwebdav) 。为缩短本页版面，我对文字说明进行了折叠处理，点击每个标题下的 **▶【查看详情】** 展开完整内容。
+影视资源大多为内封字幕的 mkv 格式，为了方便浏览，以中文名称拼音首字母、常用英文名称首字母为顺序建立文件夹索引，并将内容联系程度紧密的作品归类在了一起，当然可能有多种翻译，找不到时试试换个名称。网站被频繁访问会触发 OneDrive 的 API 调用限制，若报错 `activityLimitReached` 请刷新或稍后再试。若下载太慢请使用高速的全局代理或多线程下载器。在 PC UA 模式下可查看文件（夹）大小。动画资源主要来自 [1ove论坛](https://www.qian.blue/archives/1ove-club.html) ，电子书、电影、电视剧资源主要来自阿里云盘各种资源分享渠道。批量搬运阿里云盘资源的教程请参阅 [自建阿里云盘webdav功能并搬运资源](https://www.chirmyram.top/archives/aliyunwebdav) 。为缩短本页版面，我对文字说明进行了折叠处理，点击每个标题下的 **▶【查看详情】** 展开完整内容。
 
 ## 🏷️ 二、标签介绍
 
@@ -72,7 +72,7 @@ PaaS ，Platform as a Service ，意为平台即服务。平台为用户提供�
 
 - 虚拟化容器服务：非常容易丢数据，所谓丢数据也就是恢复到初始状态，期间的任何更改被还原，不适合拿来弄经常变动的东西，比如挂载 OneDrive 就需会经常刷新 refresh token 。那有什么不会经常变的东西呢？比如一些纯工具站，如我搭的 [m3u8 视频在线下载器](https://m3.chirmyram.com/) 、网站监控工具 [Uptime Kuma](https://up.chirmyram.com/) ，前者属于静态网页且工作时比较吃CPU，上表很多平台可以部署，后者为 JavaScript 程序，需要 nodejs 环境或使用 docker 部署，提前配置好，连同配置一起丢进去部署，任它再怎么重置也还能正常工作。
 
-- [fly.io](https://fly.io/)  ：Dockerfile 兼容性较差，别家都能用的 Dockerfile 在它这里总是报错无法成功部署。目前就在上面搭了个网站监控工具 [Uptime Kuma](https://up.chirmyram.com/) ，还有几个 [v2ray 节点](https://github.com/lyz7805/v2ray4flyio) ，这俩无论怎么重置数据也还是能用。
+- [fly.io](https://fly.io/)  ：Dockerfile 兼容性较差，别家都能用的 Dockerfile 在它这里总是报错无法成功部署。目前就在上面搭了几个 [v2ray 节点](https://github.com/lyz7805/v2ray4flyio) ，无论怎么重置数据也还是能用。
 
 - 信用卡：部分平台需要绑定国外信用卡才能获得或提升额度。如 [fly.io](https://fly.io/) 和 [render](https://render.com/) ，这俩可以用虚拟信用卡过审核，我使用的是[易贝卡](https://www.easypayx.com/card)，申请教程见[视频教程](https://youtu.be/hKib4CAMKYo)、[文字教程](https://bbs.1ove.club/thread-6070.htm)。但是过不了甲骨文、GCP、AWS等平台，它们风控极为严格。
 
@@ -250,7 +250,7 @@ https://chirmyram-my.sharepoint.com/personal/pub_chirmyram_top/Documents/
 
 ### 1.总盘
 
-- ▶ 1.1 [https://al.chirmyram.com/](https://al.chirmyram.com/) [![](https://img.shields.io/badge/HostVDS-brightgreen?&style=flat)](https://hostvds.com/) [![](https://img.shields.io/github/stars/Xhofe/alist?style=flat&label=star)](https://github.com/Xhofe/alist) [![](https://img.shields.io/badge/Root-orange?&style=flat)](https://al.chirmyram.com/)
+- ▶ 1.1 [https://al.chirmyram.com/](https://al.chirmyram.com/) [![](https://img.shields.io/badge/TCT-brightgreen?&style=flat)](https://cloud.tencent.com/product/lighthouse) [![](https://img.shields.io/github/stars/Xhofe/alist?style=flat&label=star)](https://github.com/Xhofe/alist) [![](https://img.shields.io/badge/Root-orange?&style=flat)](https://al.chirmyram.com/)
 
 **特别提示：** 网页在线播放器无法识别内封字幕、不兼容部分视频编码，需使用 WebDAV 播放器或下载到本地播放。 [alist](https://github.com/Xhofe/alist) 挂载 OneDrive 的同时也能实现 WebDAV 服务来方便浏览文件，当然也可以将它放进支持 WebDAV 的文件管理器中进行批量搬运，所以我把所有盘都挂上去了。 [alist](https://github.com/Xhofe/alist) 的 WebDAV 访客账号对文件只有**只读**权限，即只能读取无法操作，实属理想的公共 WebDAV 服务，所以我现在首推它。 PC 端多媒体播放器推荐 [Potplayer](https://potplayer.daum.net/?lang=zh_CN) ，安卓端多媒体播放器推荐 [Nplayer](https://al.chirmyram.com/rep/Android/%E8%B0%B7%E6%AD%8C%E5%95%86%E5%BA%97/nPlayer_1.7.7.7_191219.apk) ，可显示视频内封字幕、音乐内封歌词；安卓端音乐播放器推荐 [cloudbeats](https://al.chirmyram.com/rep/Android/%E8%B0%B7%E6%AD%8C%E5%95%86%E5%BA%97/CloudBeats_1.8.4.apk) ，可较快生成播放列表并串流播放，留下的缓存也极小；安卓端电子书阅读器推荐[静读天下](https://al.chirmyram.com/rep/Android/%E8%B0%B7%E6%AD%8C%E5%95%86%E5%BA%97/Moon_Reader_Pro-v7.0_build_700005-M.apk)，支持多种电子书格式。
 - WebDAV 配置参数
