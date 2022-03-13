@@ -104,7 +104,7 @@ PaaS ，Platform as a Service ，意为平台即服务。平台为用户提供�
 |[sharelist](https://github.com/reruin/sharelist/tree/0.1)|JavaScript|nodejs|✔|✖|网盘转 WebDAV（只读）|简约|
 |[zfile](https://github.com/zhaojun1998/zfile)|Java|Java|✔|✖|✖|简约|
 |[OLAINDEX](https://github.com/WangNingkai/OLAINDEX)|PHP|PHP（composer ）|✔|当前目录|✖|多主题|
-|[PanIndex](https://github.com/Xhofe/alist)|Golang|直接运行|✔|全盘|WebDAV 转目录|多主题|
+|[PanIndex](https://github.com/libsgh/PanIndex)|Golang|直接运行|✔|全盘|WebDAV 转目录|多主题|
 |[onepoint](https://github.com/ukuq/onepoint)|JavaScript|nodejs、CFW|✔|✖|✖|简约|
 |[YukiDrive](https://github.com/YukiCoco/YukiDrive)|C#|直接运行|✔|✖|✖|简约|
 |[PyOne](https://github.com/abbeyokgo/PyOne)|Python|Python3、Redis、MongoDb（Aria2）|✔|✖|✖|简约|
