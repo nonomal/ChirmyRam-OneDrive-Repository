@@ -1,4 +1,4 @@
-<img align="right" width="240" src="https://fastly.jsdelivr.net/gh/ChirmyRam/ChirmyRam-OneDrive-Repository/odlogo.png">
+<img align="right" width="240" src="https://gcore.jsdelivr.net/gh/ChirmyRam/ChirmyRam-OneDrive-Repository/odlogo.png">
 
 # 🛖 七米蓝的仓库
 
