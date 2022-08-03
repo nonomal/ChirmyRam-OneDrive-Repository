@@ -1,4 +1,4 @@
-name: Sync Readme
+name: Sync README
 on:
   push:
     branches:
@@ -6,7 +6,7 @@ on:
 jobs:
   run-it:
     runs-on: ubuntu-latest
-    name: Sync Readme
+    name: Sync README
     steps:
 
       - name: Checkout codes
