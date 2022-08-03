@@ -28,8 +28,8 @@ jobs:
           rclone delete mov:mov/README.md
           rclone delete doc:README.md
           rclone delete doc:doc/README.md
-          rclone delete tlv:README.md
-          rclone delete tlv:tlv/README.md
+          rclone delete tlv1:README.md
+          rclone delete tlv1:tlv/README.md
           rclone delete tlv2:README.md
           rclone delete tlv2:tlv/README.md
           rclone copy README.md pub:
