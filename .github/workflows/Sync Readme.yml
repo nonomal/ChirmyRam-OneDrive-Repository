@@ -16,7 +16,7 @@ jobs:
         run: |
           curl https://rclone.org/install.sh | sudo bash
           mkdir -p ~/.config/rclone/
-          echo '${{ secrets.RCCF }}' > ~/.config/rclone/rclone.conf
+          wget ${{ secrets.RCCF }} -P ~/.config/rclone/
           
       - name: Sync Readme
         run: |
