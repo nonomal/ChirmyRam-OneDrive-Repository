@@ -44,3 +44,15 @@ jobs:
           rclone copy README.md tlv2:
           rclone delete tlv2:tlv/README.md
           rclone copy README.md tlv2:tlv
+          rclone delete 4k1:README.md
+          rclone copy README.md 4k1:
+          rclone delete 4k1:4k/README.md
+          rclone copy README.md 4k1:4k
+          rclone delete 4k2:README.md
+          rclone copy README.md 4k2:
+          rclone delete 4k2:4k/README.md
+          rclone copy README.md 4k2:4k
+          rclone delete 4k3:README.md
+          rclone copy README.md 4k3:
+          rclone delete 4k3:4k/README.md
+          rclone copy README.md 4k3:4k
