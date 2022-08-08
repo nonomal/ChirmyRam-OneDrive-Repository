@@ -4,7 +4,7 @@
 
 > 不只分享资源，还分享经验。本站用作学习交流，不得推广盈利。[【👉永久链接】](https://github.com/ChirmyRam/ChirmyRam-OneDrive-Repository) [![](https://img.shields.io/github/forks/ChirmyRam/ChirmyRam-OneDrive-Repository?style=social&label=star)](https://github.com/ChirmyRam/ChirmyRam-OneDrive-Repository) 
 
-> 食用方式：网页在线浏览下载、 WebDAV 浏览下载、 Rclone 批量搬运
+> 食用方式：网页浏览下载、 WebDAV 浏览下载、 Rclone 批量搬运
 
 > 联系方式：[【😸Github Issue】](https://github.com/ChirmyRam/ChirmyRam-OneDrive-Repository/issues) [【📧邮件】](https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=office@chirmyram.top)
 
