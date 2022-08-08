@@ -240,9 +240,16 @@ user = share@2.chirmyram.top
 pass = 25es9-8BHYf1mDzSSaqMPBDAj3JjGh-95bjeWQ
 ```
 
-第一个配置文件为 [alist](https://github.com/Xhofe/alist) 自建，其余为 OneDrive 官方。更多实现 OneDrive WebDAV 的方式请参考我的博客文章[让 OneDrive 实现 WebDAV 服务](https://www.chirmyram.top/archives/onedrivewebdav) 。
+```
+[root]
+type = webdav
+url = https://al.chirmyram.com/dav/
+vendor = other
+user = alist
+pass = kCJQSyuVJDmwgI0BM60Mtum8VGnI
+```
 
- [alist](https://github.com/Xhofe/alist) 挂载 OneDrive 的同时也能实现 WebDAV 服务来方便浏览文件，当然也可以将它放进支持 WebDAV 的文件管理器中进行批量搬运，也不会走自建服务器的流量，所以我把所有盘都挂上去了。 [alist](https://github.com/Xhofe/alist) 的 WebDAV 访客账号对文件只有**只读**权限，即只能读取无法操作，实属理想的公共 WebDAV 服务。但这只是我自建的 WebDAV 服务，远不如微软官方的稳定。
+最后一个配置文件为 [alist](https://github.com/Xhofe/alist) 自建，其余为 OneDrive 官方，我自建的 WebDAV 服务远不如微软官方的稳定。更多实现 OneDrive WebDAV 的方式请参考我的博客文章[让 OneDrive 实现 WebDAV 服务](https://www.chirmyram.top/archives/onedrivewebdav) 。 [alist](https://github.com/Xhofe/alist) 挂载 OneDrive 的同时也能实现 WebDAV 服务来方便浏览文件，也可以将它放进支持 WebDAV 的文件管理器中进行批量搬运，也不会走自建服务器的流量，所以我把所有盘都挂上去了。 [alist](https://github.com/Xhofe/alist) 的 WebDAV 访客账号对文件只有**只读**权限，即只能读取无法操作，实属理想的公共 WebDAV 服务。
 
 OneDrive 商业版本身不支持目前通行的 WebDAV 协议，但它确实有比较特殊的 WebDAV 功能。以我的 E5 OneDrive 登录后首页根目录地址为例：
 ```
@@ -252,9 +259,7 @@ https://chirmyram-my.sharepoint.com/personal/pub_chirmyram_top/_layouts/15/onedr
 ```
 https://chirmyram-my.sharepoint.com/personal/pub_chirmyram_top/Documents/
 ```
-观察其特点可发现，将末尾的 `/_layouts/15/onedrive.aspx` 替换为 `/Documents/` 就可以了。末尾 /Documents/ 即为 OneDrive 根目录，也可在其后继续添加子目录。
-
-建议少量分批次搬运，否则我修改部分资源的时候会导致搬运任务出错，前功尽弃。两个网盘对拷不会占用本地储存空间，当然流量还是烧的自己的，而且是双倍流量，不过部分 VPS 商家不会计算进入VPS 的入网流量。
+观察其特点可发现，将末尾的 `/_layouts/15/onedrive.aspx` 替换为 `/Documents/` 就可以了。末尾 /Documents/ 即为 OneDrive 根目录，也可在其后继续添加子目录。建议分批次少量搬运，否则我修改部分资源的时候会导致搬运任务出错，前功尽弃。两个网盘对拷不会占用本地储存空间，流量还是烧的自己的，而且是双倍流量，可能部分 VPS 商家不会计算进入VPS 的入网流量。
 
 </details>
 
