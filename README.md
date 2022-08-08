@@ -153,7 +153,7 @@ PaaS ，Platform as a Service ，意为平台即服务。平台为用户提供�
 
 > 使用原始的批量下载工具进行下载也行，不过更推荐认识一下 [Rclone](https://rclone.org/) 。
 
-[Rclone](https://rclone.org/) 是一个支持多种云储存平台、国外云盘、储存协议的命令行工具，兼容 OneDrive 独特的 WebDAV 功能，自行搜索挂载教程。分享资源时登录 OneDrive 网页端，管理资源文件夹的访问权限，赋予同域内空白账户（无任何订阅许可证）为**可查看**权限，即**只读权限**，使用 [Rclone](https://rclone.org/) 配置该空白账户及资源文件夹链接，自动加密空白账户密码，既可共享出来批量搬运资源，又能：限制文件操作权限、避免泄露密码、避免没有创建 API 权限的尴尬、不必出现 refresh token 过期。直接在 [Rclone](https://rclone.org/) 配置文件中填入下述配置，不能再逐步配置，再次配置会导致已被加密后的密码文本被再次加密， [Rclone](https://rclone.org/) 无法识别真实密码报错。配置名 `[rep]` 即为盘符名，在 [Rclone](https://rclone.org/) 中称为 `remote` 。
+[Rclone](https://rclone.org/) 是一个支持多种云储存平台、国外云盘、储存协议的命令行工具，兼容 OneDrive 独特的 WebDAV 功能，自行搜索挂载教程。分享资源时登录 OneDrive 网页端，管理资源文件夹的访问权限，赋予同域内空白账户（无任何订阅许可证）为**可查看**权限，即**只读权限**，使用 [Rclone](https://rclone.org/) 配置该空白账户及资源文件夹链接，自动加密空白账户密码，既可共享出来批量搬运资源，又能：限制文件操作权限、避免泄露密码、避免没有创建 API 权限的尴尬、不会出现 refresh token 过期。直接在 [Rclone](https://rclone.org/) 配置文件中填入下述配置，不能再逐步配置，再次配置会导致已被加密后的密码文本被再次加密， [Rclone](https://rclone.org/) 无法识别真实密码报错。配置名 `[rep]` 即为盘符名，在 [Rclone](https://rclone.org/) 中称为 `remote` 。
 
 [Rclone](https://rclone.org/) 还有相对简便易用的图形界面程序 [RcloneBrowser](https://github.com/kapitainsky/RcloneBrowser/releases) ，如果命令行用起来不太顺手可以试试。下载核心程序 [Rclone](https://rclone.org/downloads/) 解压，下载图形界面程序 [RcloneBrowser](https://github.com/kapitainsky/RcloneBrowser/releases)  安装。新建一个 `rclone.conf` 文本文件，将下述配置文件复制进去。在图形程序中，点击左上角 `file` → `preferences` ， `rclone location` 选择解压出的 rclone 核心主程序 `rclone.exe` ， `rclone.conf location` 选择新建的 `rclone.conf` 文件。回到图形程序界面点击左下角 `refresh` 刷新出配置，最后就可以浏览文件批量下载了，在顶部第二行 `Jobs` 中查看传输进程。
 
@@ -249,7 +249,7 @@ user = alist
 pass = kCJQSyuVJDmwgI0BM60Mtum8VGnI
 ```
 
-最后一个配置文件为 [alist](https://github.com/Xhofe/alist) 自建，其余为 OneDrive 官方，我自建的 WebDAV 服务远不如微软官方的稳定。更多实现 OneDrive WebDAV 的方式请参考我的博客文章[让 OneDrive 实现 WebDAV 服务](https://www.chirmyram.top/archives/onedrivewebdav) 。 [alist](https://github.com/Xhofe/alist) 挂载 OneDrive 的同时也能实现 WebDAV 服务来方便浏览文件，也可以将它放进支持 WebDAV 的文件管理器中进行批量搬运，也不会走自建服务器的流量，所以我把所有盘都挂上去了。 [alist](https://github.com/Xhofe/alist) 的 WebDAV 访客账号对文件只有**只读**权限，即只能读取无法操作，实属理想的公共 WebDAV 服务。
+最后一个配置文件由我用 [alist](https://github.com/Xhofe/alist) 自建，其余为 OneDrive 官方，自建远不如微软官方的稳定。 [alist](https://github.com/Xhofe/alist) 挂载网盘后能将已挂载的网盘转化为 WebDAV 服务提供给第三方管理器来浏览文件，由 OneDrive 转化而来的 WebDAV 挂载到第三方后批量搬运不会消耗自建服务器的流量，且访客账号对文件为**只读**权限，即只能读取无法操作，实属理想的公共 WebDAV 服务。更多实现 OneDrive WebDAV 的方式请参考我的博客文章[让 OneDrive 实现 WebDAV 服务](https://www.chirmyram.top/archives/onedrivewebdav) 。 
 
 OneDrive 商业版本身不支持目前通行的 WebDAV 协议，但它确实有比较特殊的 WebDAV 功能。以我的 E5 OneDrive 登录后首页根目录地址为例：
 ```
