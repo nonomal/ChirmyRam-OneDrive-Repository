@@ -61,11 +61,10 @@ PaaS ，Platform as a Service ，意为平台即服务。平台为用户提供�
 
 这是我的浅薄理解，当然在这里也不必深入理解、甚至还会混为一谈，介绍它俩是为了方便在谷歌搜索相关内容，同义搜索词还有 free cloud container 、free cloud hosting 等等。只需要知道这些平台都有一个共同的特点：用户可以将程序项目放到云服务平台持续运行，平台已经预先提供了相应的运行环境。
 
-为了方便这里就简称云平台了，以此来看，如[腾讯云函数](https://cloud.tencent.com/product/scf/)、 [heroku](https://www.heroku.com/) 已经是为众多折腾玩家所周知。部署方式多为从 github 仓库拉取源码、使用CLI命令行工具从本地上传源码等，大多为 docker 容器服务构建，即源码等东西放进去就没法修改或取不出来，不同于 VPS 具有完整的 Linux 环境，这些云平台的环境都是指定的，选则后除非删除否则无法自由更改。这类云平台在国内较少，就那几大云服务商的云函数，限制比较多，国外倒是多如牛毛，这里有一个别人总结的、为开发者提供一定免费额度服务的平台 [free-for-dev](https://github.com/ripienaar/free-for-dev) ，点进每个平台应直奔 Price 页面看价格套餐。薅羊毛必备，我上穷碧落下黄泉尝试了好几家，实在折腾得够呛。
+为了方便这里就简称云平台了，以此来看，如[腾讯云函数](https://cloud.tencent.com/product/scf/)之类的已经是为众多折腾玩家所周知。部署方式多为从 github 仓库拉取源码、使用CLI命令行工具从本地上传源码等，大多为 docker 容器服务构建，即源码等东西放进去就没法修改或取不出来，不同于 VPS 具有完整的 Linux 环境，这些云平台的环境都是指定的，选则后除非删除否则无法自由更改。这类云平台在国内较少，就那几大云服务商的云函数，限制比较多，国外倒是多如牛毛，这里有一个别人总结的、为开发者提供一定免费额度服务的平台 [free-for-dev](https://github.com/ripienaar/free-for-dev) ，点进每个平台应直奔 Price 页面看价格套餐。薅羊毛必备，我上穷碧落下黄泉尝试了好几家，实在折腾得够呛。
 
 |平台|性质|免费额度|主要限制|部署方式|自定义域名|
 |-|-|-|-|-|-|
-|[heroku](https://www.heroku.com/)|虚拟化容器服务|每月总计550小时；绑卡达1000小时（绑卡会扣款）|超30分钟不活跃将休眠并重置数据；每24小时重启并重置数据|拉取 github 仓库；CLI 命令行工具|绑卡才能自定义域名，否则自行反代；付费才能配置 https|
 |[vercel](https://vercel.com/)|静态网页服务|每月总计100G流量|每天部署100次；部署的网站被访问过多会发邮件警告封号|拉取 github 仓库； CLI 命令行工具|通过 CNAME 解析自定义域名；自动生成 SSL 证书；自动重定向至 https|
 |[glitch](https://glitch.com/)|静态网页服务|每月总计1000小时|超30分钟不活跃将休眠|拉取 github 仓库|通过 CNAME 解析自定义域名；自动生成 SSL 证书；自动重定向至 https|
 |[netlify](https://www.netlify.com/)|静态网页服务|每月总计100G流量；每月总计构建300分钟；站点数量无限|只能同时构建1个实例|拉取 github 仓库；CLI 命令行工具|通过 CNAME 解析自定义域名；自动生成 SSL 证书；自动重定向至 https|
@@ -136,7 +135,7 @@ PaaS ，Platform as a Service ，意为平台即服务。平台为用户提供�
 
 - WebDAV ：表中所指的 WebDAV 有两种情况。服务端：本程序 → 第三方，被第三方程序挂载，在第三方程序操作本程序的文件；客户端：第三方 → 本程序，挂载第三方 WebDAV 服务到本程序，在本程序操作第三方的文件。
 
-- [alist](https://github.com/Xhofe/alist) ：可以使用免费的远程云数据库将其部署至 [heroku](https://www.heroku.com/) 或 [render](https://render.com/) ，参照项目 [alist-heroku](https://github.com/sbwml/alist-heroku) ，在应用休眠后再次唤醒不会丢失数据。需要注意的是：在 [heroku](https://www.heroku.com/) 上部署后使用应用默认的域名、 CFW 反代加速可正常使用 WebDAV 功能，而 CFW 反代之后又自定义域名会导致 WebDAV 功能失效无法连接；在 [render](https://render.com/) 上面部署无法使用 WebDAV 功能。
+- [alist](https://github.com/Xhofe/alist) ：可以使用免费的远程云数据库将其部署至 [render](https://render.com/) 等PAAS平台，参照项目 [alist-render](https://github.com/alist-org/alist-render) ，在应用休眠后再次唤醒不会丢失数据。需要注意的是：在 [render](https://render.com/) 上部署后无法使用 WebDAV 功能。
 
 - [OneIndex](https://github.com/motao123/oneindex) ：原仓库已被作者删除，我用的是众多魔改分支中的一个，看图模式来自[闲得没事做改了一下 oneindex 的看图模式](https://www.hostloc.com/thread-484078-1-1.html)，评论系统来自 [oneindex网盘添加gitalk评论系统](https://iwalyou.com/515.html) ，主题美化来自[自带主题 nexmoe 的美化修改](https://github.com/Zisbusy/OneIndex-theme)。除此之外还有其他较为有特色的魔改版：[oneindex-j](https://github.com/jialezi/oneindex-j) 支持挂载国际版 Sharepoint 、世纪互联 OneDrive 及 Sharepoint ， 但仍只支持挂载一个账户；[OneindexN](https://github.com/xieqifei/OneindexN) 支持全盘搜索、aria2 离线下载，全局搜索为onedrive官方返回的结果，搜索结果并不准确；[OneindexM](https://github.com/Mintimate/OneindexM) 在 [OneindexN](https://github.com/xieqifei/OneindexN) 的基础上进行了修复和优化。
 
@@ -290,7 +289,7 @@ https://chirmyram-my.sharepoint.com/personal/pub_chirmyram_top/Documents/
 
 ### 1.总盘
 
-- ▶ 1.1 [https://al.chirmyram.com/](https://al.chirmyram.com/) [![](https://img.shields.io/badge/Northflank-brightgreen?&style=flat)](https://northflank.com/) [![](https://img.shields.io/github/stars/Xhofe/alist?style=flat&label=star)](https://github.com/Xhofe/alist) [![](https://img.shields.io/badge/Root-orange?&style=flat)](https://al.chirmyram.com/)
+- ▶ 1.1 [https://al.chirmyram.com/](https://al.chirmyram.com/) [![](https://img.shields.io/badge/Goorm-brightgreen?&style=flat)](https://ide.goorm.io/) [![](https://img.shields.io/github/stars/Xhofe/alist?style=flat&label=star)](https://github.com/Xhofe/alist) [![](https://img.shields.io/badge/Root-orange?&style=flat)](https://al.chirmyram.com/)
 
 **特别提示：** 网页播放器无法识别内封字幕、不兼容 HEVC 视频编码，需使用挂载到本地播放器或下载后播放。PC 端播放器推荐 [Potplayer](https://potplayer.daum.net/?lang=zh_CN) ，安卓端多媒体播放器推荐 [Nplayer](https://al.chirmyram.com/rep/Android/%E8%B0%B7%E6%AD%8C%E5%95%86%E5%BA%97/nPlayer_1.7.7.7_191219.apk) ，可显示视频内封字幕、音乐内封歌词；安卓端音乐播放器推荐 [cloudbeats](https://al.chirmyram.com/rep/Android/%E8%B0%B7%E6%AD%8C%E5%95%86%E5%BA%97/CloudBeats_1.8.4.apk) ，可较快生成播放列表并串流播放，留下的缓存也极小；安卓端电子书阅读器推荐[静读天下](https://al.chirmyram.com/rep/Android/%E8%B0%B7%E6%AD%8C%E5%95%86%E5%BA%97/Moon_Reader_Pro-v7.0_build_700005-M.apk)，支持多种电子书格式。
 - WebDAV 配置参数
