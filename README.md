@@ -289,7 +289,7 @@ https://chirmyram-my.sharepoint.com/personal/pub_chirmyram_top/Documents/
 
 ### 1.总盘
 
-- ▶ 1.1 [https://al.chirmyram.com/](https://al.chirmyram.com/) [![](https://img.shields.io/badge/Goorm-brightgreen?&style=flat)](https://ide.goorm.io/) [![](https://img.shields.io/github/stars/Xhofe/alist?style=flat&label=star)](https://github.com/Xhofe/alist) [![](https://img.shields.io/badge/Root-orange?&style=flat)](https://al.chirmyram.com/)
+- ▶ 1.1 [https://al.chirmyram.com/](https://al.chirmyram.com/) [![](https://img.shields.io/badge/Northflank-brightgreen?&style=flat)](https://northflank.com/) [![](https://img.shields.io/github/stars/Xhofe/alist?style=flat&label=star)](https://github.com/Xhofe/alist) [![](https://img.shields.io/badge/Root-orange?&style=flat)](https://al.chirmyram.com/)
 
 **特别提示：** 网页播放器无法识别内封字幕、不兼容 HEVC 视频编码，需使用挂载到本地播放器或下载后播放。PC 端播放器推荐 [Potplayer](https://potplayer.daum.net/?lang=zh_CN) ，安卓端多媒体播放器推荐 [Nplayer](https://al.chirmyram.com/rep/Android/%E8%B0%B7%E6%AD%8C%E5%95%86%E5%BA%97/nPlayer_1.7.7.7_191219.apk) ，可显示视频内封字幕、音乐内封歌词；安卓端音乐播放器推荐 [cloudbeats](https://al.chirmyram.com/rep/Android/%E8%B0%B7%E6%AD%8C%E5%95%86%E5%BA%97/CloudBeats_1.8.4.apk) ，可较快生成播放列表并串流播放，留下的缓存也极小；安卓端电子书阅读器推荐[静读天下](https://al.chirmyram.com/rep/Android/%E8%B0%B7%E6%AD%8C%E5%95%86%E5%BA%97/Moon_Reader_Pro-v7.0_build_700005-M.apk)，支持多种电子书格式。
 - WebDAV 配置参数
