@@ -308,7 +308,7 @@ https://chirmyram-my.sharepoint.com/personal/pub_chirmyram_top/Documents/
 
 - ▶ 1.2 [https://om.chirmyram.com/](https://om.chirmyram.com/) [![](https://img.shields.io/badge/Euserv-brightgreen?&style=flat)](https://euserv.com/) [![](https://img.shields.io/github/stars/qkqpttgf/OneManager-php?style=flat&label=star)](https://github.com/qkqpttgf/OneManager-php) [![](https://img.shields.io/badge/Root-orange?&style=flat)](https://om.chirmyram.com/)
 
-- ▶ 1.3 [https://op.chirmyram.com/](https://op.chirmyram.com/) [![](https://img.shields.io/badge/Goorm-brightgreen?&style=flat)](https://ide.goorm.io/)  [![](https://img.shields.io/github/stars/ukuq/onepoint?style=flat&label=star)](https://github.com/ukuq/onepoint) [![](https://img.shields.io/badge/Root-orange?&style=flat)](https://op.chirmyram.com/)
+- ▶ 1.3 [https://op.chirmyram.com/](https://op.chirmyram.com/) [![](https://img.shields.io/badge/DediPath-brightgreen?&style=flat)](https://dedipath.com/)  [![](https://img.shields.io/github/stars/ukuq/onepoint?style=flat&label=star)](https://github.com/ukuq/onepoint) [![](https://img.shields.io/badge/Root-orange?&style=flat)](https://op.chirmyram.com/)
 
 - ▶ 1.4 [https://zf.chirmyram.com/](https://zf.chirmyram.com/) [![](https://img.shields.io/badge/Northflank-brightgreen?&style=flat)](https://northflank.com/) [![](https://img.shields.io/github/stars/zhaojun1998/Zfile?style=flat&label=star)](https://github.com/zhaojun1998/Zfile) [![](https://img.shields.io/badge/Root-orange?&style=flat)](https://zf.chirmyram.com/)
 
