@@ -107,16 +107,16 @@ PaaS ，Platform as a Service ，意为平台即服务。平台为用户提供�
 
 |程序|语言|运行环境|多账户|搜索范围|WebDAV|美化程度|
 |-|-|-|-|-|-|-|
-|[alist](https://github.com/Xhofe/alist)|Golang|直接运行|√|×|服务端（访客账号为只读权限）、客户端|自定义|
+|[alist](https://github.com/Xhofe/alist)|Golang|直接运行|√|×|服务端（可改权限）、客户端|自定义|
 |OneManager（[PHP](https://github.com/qkqpttgf/OneManager-php)、[CFW](https://github.com/qkqpttgf/OneManager-cfworkerskv)）|PHP、JavaScript|PHP、CFW|√|×|×|多主题|
 |[OneIndex](https://github.com/motao123/oneindex)|PHP|PHP（composer ）|×|×|×|多主题|
 |[FODI](https://github.com/vcheckzen/FODI)|JavaScript，HTML|CFW，Web|×|×|×|简约|
 |[onedrive-vercel-index](https://github.com/spencerwooo/onedrive-vercel-index)|TypeScript|Vercel|×|×|×|简约|
 |[gonelist](https://github.com/gonelist/gonelist)|Golang|直接运行|×|全盘|服务端（尚不完善）|简约|
 |[sharelist](https://github.com/reruin/sharelist/tree/0.1)|JavaScript|nodejs|√|×|服务端（只读）、客户端|简约|
-|[zfile](https://github.com/zhaojun1998/zfile)|Java|Java|√|×|客户端|简约|
+|[zfile](https://github.com/zhaojun1998/zfile)|Java|Java|√|×|服务端（需捐赠）、客户端|简约|
 |[OLAINDEX](https://github.com/WangNingkai/OLAINDEX)|PHP|PHP（composer ）|√|当前目录|×|多主题|
-|[PanIndex](https://github.com/libsgh/PanIndex)|Golang|直接运行|√|全盘|客户端|多主题|
+|[PanIndex](https://github.com/libsgh/PanIndex)|Golang|直接运行|√|全盘|服务端、客户端|多主题|
 |[onepoint](https://github.com/ukuq/onepoint)|JavaScript|nodejs、CFW|√|×|×|简约|
 |[YukiDrive](https://github.com/YukiCoco/YukiDrive)|C#|直接运行|√|×|×|简约|
 |[PyOne](https://github.com/abbeyokgo/PyOne)|Python|Python3、Redis、MongoDb（Aria2）|√|×|×|简约|
@@ -135,7 +135,7 @@ PaaS ，Platform as a Service ，意为平台即服务。平台为用户提供�
 
 - WebDAV ：表中所指的 WebDAV 有两种情况。服务端：本程序 → 第三方，被第三方程序挂载，在第三方程序操作本程序的文件；客户端：第三方 → 本程序，挂载第三方 WebDAV 服务到本程序，在本程序操作第三方的文件。
 
-- [alist](https://github.com/Xhofe/alist) ：可以使用免费的远程云数据库将其部署至 [render](https://render.com/) 等PAAS平台，参照项目 [alist-render](https://github.com/alist-org/alist-render) ，在应用休眠后再次唤醒不会丢失数据。需要注意的是：在 [render](https://render.com/) 上部署后无法使用 WebDAV 功能。
+- [alist](https://github.com/Xhofe/alist) ：可以使用免费的远程云数据库将其部署至 [render](https://render.com/) 等PaaS平台，参照项目 [alist-render](https://github.com/alist-org/alist-render) ，在应用休眠后再次唤醒不会丢失数据。需要注意的是：在 [render](https://render.com/) 上部署后无法使用 WebDAV 功能。
 
 - [OneIndex](https://github.com/motao123/oneindex) ：原仓库已被作者删除，我用的是众多魔改分支中的一个，看图模式来自[闲得没事做改了一下 oneindex 的看图模式](https://www.hostloc.com/thread-484078-1-1.html)，评论系统来自 [oneindex网盘添加gitalk评论系统](https://iwalyou.com/515.html) ，主题美化来自[自带主题 nexmoe 的美化修改](https://github.com/Zisbusy/OneIndex-theme)。除此之外还有其他较为有特色的魔改版：[oneindex-j](https://github.com/jialezi/oneindex-j) 支持挂载国际版 Sharepoint 、世纪互联 OneDrive 及 Sharepoint ， 但仍只支持挂载一个账户；[OneindexN](https://github.com/xieqifei/OneindexN) 支持全盘搜索、aria2 离线下载，全局搜索为onedrive官方返回的结果，搜索结果并不准确；[OneindexM](https://github.com/Mintimate/OneindexM) 在 [OneindexN](https://github.com/xieqifei/OneindexN) 的基础上进行了修复和优化。
 
@@ -308,13 +308,13 @@ https://chirmyram-my.sharepoint.com/personal/pub_chirmyram_top/Documents/
 
 - ▶ 1.2 [https://om.chirmyram.com/](https://om.chirmyram.com/) [![](https://img.shields.io/badge/Euserv-brightgreen?&style=flat)](https://euserv.com/) [![](https://img.shields.io/github/stars/qkqpttgf/OneManager-php?style=flat&label=star)](https://github.com/qkqpttgf/OneManager-php) [![](https://img.shields.io/badge/Root-orange?&style=flat)](https://om.chirmyram.com/)
 
-- ▶ 1.3 [https://op.chirmyram.com/](https://op.chirmyram.com/) [![](https://img.shields.io/badge/DediPath-brightgreen?&style=flat)](https://dedipath.com/)  [![](https://img.shields.io/github/stars/ukuq/onepoint?style=flat&label=star)](https://github.com/ukuq/onepoint) [![](https://img.shields.io/badge/Root-orange?&style=flat)](https://op.chirmyram.com/)
+- ▶ 1.3 [https://op.chirmyram.com/](https://op.chirmyram.com/) [![](https://img.shields.io/badge/Northflank-brightgreen?&style=flat)](https://northflank.com/)  [![](https://img.shields.io/github/stars/ukuq/onepoint?style=flat&label=star)](https://github.com/ukuq/onepoint) [![](https://img.shields.io/badge/Root-orange?&style=flat)](https://op.chirmyram.com/)
 
 - ▶ 1.4 [https://zf.chirmyram.com/](https://zf.chirmyram.com/) [![](https://img.shields.io/badge/Northflank-brightgreen?&style=flat)](https://northflank.com/) [![](https://img.shields.io/github/stars/zhaojun1998/Zfile?style=flat&label=star)](https://github.com/zhaojun1998/Zfile) [![](https://img.shields.io/badge/Root-orange?&style=flat)](https://zf.chirmyram.com/)
 
 - ▶ 1.5 [https://zf.chirmyram.top/](https://zf.chirmyram.top/) [![](https://img.shields.io/badge/Android-brightgreen?&style=flat)](https://f-droid.org/packages/com.termux/) [![](https://img.shields.io/github/stars/zhaojun1998/Zfile?style=flat&label=star)](https://github.com/zhaojun1998/Zfile) [![](https://img.shields.io/badge/Root-orange?&style=flat)](https://zf.chirmyram.top/)
 
-- ▶ 1.6 [https://oli.chirmyram.top/](https://oli.chirmyram.top/) [![](https://img.shields.io/badge/Android-brightgreen?&style=flat)](https://f-droid.org/packages/com.termux/) [![](https://img.shields.io/github/stars/WangNingkai/OLAINDEX?style=flat&label=star)](https://github.com/WangNingkai/OLAINDEX) [![](https://img.shields.io/badge/Root-orange?&style=flat)](https://oli.chirmyram.top/)
+- ▶ 1.6 [https://oli.chirmyram.top/](https://oli.chirmyram.top/) [![](https://img.shields.io/badge/Northflank-brightgreen?&style=flat)](https://northflank.com/) [![](https://img.shields.io/github/stars/WangNingkai/OLAINDEX?style=flat&label=star)](https://github.com/WangNingkai/OLAINDEX) [![](https://img.shields.io/badge/Root-orange?&style=flat)](https://oli.chirmyram.top/)
 
 ### 2. 仓库盘
 
